@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="Accout:"/>
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:id="@+id/accountEdit"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="Password:"/>
+
+        <EditText
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_gravity="center_vertical"
+            android:inputType="textPassword"
+            android:id="@+id/passwordEdit"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/saveAccount"
+            android:text="保存账号"/>
+        <CheckBox
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:id="@+id/savePassword"
+            android:text="保存密码"/>
+
+    </LinearLayout>
+    <Button
+        android:layout_width="200dp"
+        android:layout_height="60dp"
+        android:id="@+id/login"
+        android:text="Login"
+        android:layout_gravity="center_horizontal"/>
+</LinearLayout>

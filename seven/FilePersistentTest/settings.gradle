@@ -1,0 +1,2 @@
+rootProject.name='FilePersistentTest'
+include ':app'
